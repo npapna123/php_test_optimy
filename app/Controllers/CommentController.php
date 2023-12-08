@@ -16,9 +16,10 @@ class CommentController
     }
 
     /**
-     * list all news
+     * list all comments
+     * @return array
      */
-    public function listComments()
+    public function listComments(): array
     {
         $comments = [];
         foreach($this->commentRepository->getComments() as $row) {

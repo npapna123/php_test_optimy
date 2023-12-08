@@ -20,7 +20,7 @@ class CommentRepository {
      * delete comment by ID
      * @param int $id
      */
-    public function deleteById($id)
+    public function deleteById(int $id)
     {
         $db = DB::getInstance();
         $sql = "DELETE FROM `comment` WHERE `id`=" . $id;

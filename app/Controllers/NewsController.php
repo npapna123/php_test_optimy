@@ -22,8 +22,9 @@ class NewsController
 
     /**
      * list all news
+     * @return array
      */
-    public function listNews()
+    public function listNews(): array
     {
         $news = [];
         foreach($this->newsRepository->getNews() as $row) {
